@@ -1,5 +1,7 @@
 <template>
+	
   <view>
+	  <view> <my-search :bgcolor="'black'" @click="gotoSearch"></my-search></view>
     <view class="scroll-view-container">
 	<!-- 左侧的滚动视图区域 -->
 	<scroll-view class="left-scroll-view" scroll-y :style="{height: wh + 'px'}" >
@@ -24,7 +26,11 @@
 	  </view>
 	</scroll-view>
     </view>
+	
   </view>
+  
+  <!-- 使用自定义的搜索组件 -->
+  
 </template>
 <script>
   export default {
@@ -50,6 +56,12 @@
 	  this.getCateList()
     },
 	methods:{
+	   // 跳转到分包中的搜索页面
+	   gotoSearch() {
+		 uni.navigateTo({
+		   url: '/subpkg/search/search'
+		 })
+	   },
 		//点击三级分类跳转到商品列表页面
 		gotoGoodsList(item3){
 			uni.navigateTo({

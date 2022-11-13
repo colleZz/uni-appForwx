@@ -8,12 +8,14 @@ import {$http} from '@escook/request-miniprogram'
 
 uni.$http =$http
 
+//注册组件
+// import my_search from './components/my_search/my_search.vue'
+// Vue.component('my_search',my_search)
 //设置请求的根路径
 $http.baseUrl = 'https://api-ugo-web.itheima.net'
 
 // 请求开始之前做一些事情
 $http.beforeRequest = function(options){
-
 }
 // 封装的展示消息提示的方法
 uni.$showMsg = function (title = '数据加载失败！', duration = 1500) {
