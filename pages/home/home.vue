@@ -32,7 +32,7 @@
 			  <!-- 右侧 4 个小图片的盒子 -->
 			  <view class="right-img-box">
 				<navigator  class="right-img-item" v-for="(item2, i2) in item.product_list" :key="i2" v-if="i2 !== 0" :url="item2.url">
-				  <image :src="item2.image_src" mode="widthFix" :style="{width: item2.image_width + 'rpx'}"></image>
+				  <image :src="item2.image_src" mosde="widthFix" :style="{width: item2.image_width + 'rpx'}"></image>
 				</navigator >
 			  </view>
 			</view>
