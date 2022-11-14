@@ -10,6 +10,7 @@
 
 <script>
 	export default {
+		
 		name:"my-search",
 		props: {
 		  // 背景颜色

@@ -49,7 +49,7 @@
 				// 搜索结果列表
 				searchResults: [],
 				// 搜索关键词的历史记录
-				historyList: ['a', 'app', 'apple']
+				historyList: []
 			};
 		},
 		methods: {
